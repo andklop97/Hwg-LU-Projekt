@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<h2>Online Shop</h2>
+
 <%= new java.util.Date() %>
 
 </body>
