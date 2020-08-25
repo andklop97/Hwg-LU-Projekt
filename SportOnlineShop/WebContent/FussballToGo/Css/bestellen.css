@@ -1,0 +1,139 @@
+@charset "ISO-8859-1";
+*.header{
+	
+	display: flex;
+	height: 55px;
+	width: 100%;
+	background-color: aliceblue;
+}
+
+
+
+.header-mitte{
+	
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    margin-left: 250px;
+    margin-top: 10px;
+  
+}
+
+.header-links{
+  display: inline-block;
+    width: 10%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+img{
+	width:40%;
+	margin:10px;
+	max-width:20%; 
+	max-height:20%; 
+	text-align:center; 
+}
+.titel{
+	display: inline-block;
+  margin-left: 120px;
+}
+.preis{
+	display: inline-block;
+ margin-left: 190px;
+	color: red;
+}
+.mex1{
+color:black;
+font-weight:normal;
+padding:10px;
+width:90px;
+height:25px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+box-shadow:1px 1px 1px 1px #666;
+display: inline-block;
+ margin-top:10px;
+background-color: aliceblue;
+}
+.mex2{
+color:black;
+font-weight:normal;
+padding:10px;
+width:90px;
+height:25px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+box-shadow:1px 1px 1px 1px #666;
+display: inline-block;
+    margin-left: 30px;
+    margin-top:10px;	
+    background-color: aliceblue;
+}
+.mex3{
+color:black;
+font-weight:normal;
+padding:10px;
+width:90px;
+height:25px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+box-shadow:1px 1px 1px 1px #666;
+display: inline-block;
+    margin-left: 30px;	
+    margin-top:10px;
+    background-color:aliceblue;
+}
+.imgBall{
+	width:100%;
+	display: inline-block;
+ margin-left: 100px;
+}
+.minus{
+	
+	display: inline-block;
+margin-left: 200px;
+color:white;
+background-color: gray;
+height:30px;
+}
+.zahl{
+display: inline-block;
+	color:black;
+	background-color: white;
+	height:30px;
+}
+.plus{
+	display: inline-block;
+	margin-right: 50px;
+	color:white;
+	background-color: gray;
+	height:30px;
+}
+.bestellen{
+	width:20%;
+	display: inline-block;
+	margin-left: 650px;
+	margin-top:20px;
+	color:white;
+	background-color: green;
+	height:45px;
+	
+	
+}
+.menge{
+	
+	display: inline-block;
+	margin-left: 500px;
+	margin-top: 40px;
+	
+	
+}
+.link{
+ display: inline-block;
+	margin-left: 620px;
+	margin-top:20px;
+}
+.body{
+  display: inline-block; 
+  margin-bottom: 100px;
+}

@@ -1,0 +1,157 @@
+@charset "ISO-8859-1";
+.header{
+	
+	display: flex;
+	height: 50px;
+	width: 100%;
+	background-color: aliceblue;
+}
+
+
+
+.header-mitte{
+	
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    margin-left: 250px;
+    margin-top: 10px;
+  
+}
+
+.header-links{
+  display: inline-block;
+    width: 10%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+img{
+	width:40%;
+	margin:10px;
+	max-width:55%; 
+	max-height:20%; 
+	text-align:center; 
+}
+
+.mex1{
+color:black;
+font-weight:normal;
+
+width:90px;
+height:25px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+box-shadow:1px 1px 1px 1px #666;
+display: inline-block;
+ margin-top:10px;
+background-color: aliceblue;
+}
+.mex2{
+color:black;
+font-weight:normal;
+
+width:90px;
+height:25px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+box-shadow:1px 1px 1px 1px #666;
+display: inline-block;
+    margin-left: 30px;
+    margin-top:10px;	
+    background-color: aliceblue;
+}
+.mex3{
+color:black;
+font-weight:normal;
+
+width:90px;
+height:25px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+box-shadow:1px 1px 1px 1px #666;
+display: inline-block;
+    margin-left: 30px;	
+    margin-top:10px;
+    background-color:aliceblue;
+}
+body {
+	margin: 0 auto;
+	
+}
+
+.body1{
+	display: flex;
+}
+.trikot11{
+	width: 33%;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.titel11{
+	margin-left: 20px;
+}
+.preis11{
+	margin-left: 50px;
+		margin-top: -10px;
+		color:red;
+}
+
+.trikot12{
+	width: 33%;
+	
+	margin-top: 40px;
+}
+.preis12{
+	
+		color:red;
+		margin-top: -10px;
+	
+		margin-left: 50px;
+}
+
+.trikot13{
+	width: 34%;
+	margin-left: 20px;
+	margin-top: 30px;
+	
+}
+.preis13{
+	
+		color:red;
+		margin-top: -10px;
+	margin-left: 30px;
+	
+}
+.body2{
+	display: flex;
+}
+.trikot23{
+	width: 34%;
+	margin-left: 20px;
+	margin-top: 36px;
+	
+}
+.preis23{
+	
+		color:red;
+		margin-top: -10px;
+	margin-left: 30px;
+	
+}
+
+.body3{
+	display: flex;
+}
+.trikot32{
+	width: 33%;
+	
+	margin-top: 15px;
+}
+.preis32{
+	
+		color:red;
+		margin-top: -10px;
+	
+		margin-left: 50px;
+}
