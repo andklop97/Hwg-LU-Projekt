@@ -7,6 +7,9 @@
 <title>FussbälleSeiteAppl</title>
 </head>
 <body>
+
+<jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+
 <%
 String ball1=request.getParameter("ball1");
 if(ball1==null) ball1="";

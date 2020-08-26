@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+
 <div class="header">
     <div > <input class="mex1"  type="submit" name="Damen"  value="Damen" /> </div>
   <div > <input class="mex2"  type="submit" name="Damen" value="Herren"/> </div>
@@ -95,7 +97,13 @@
 </div>
 </div>
 
+<jsp:getProperty name="fsb" property="htmlFromArtikel" />
+
 </form>
+
+
+
+
 
 
 </body>
