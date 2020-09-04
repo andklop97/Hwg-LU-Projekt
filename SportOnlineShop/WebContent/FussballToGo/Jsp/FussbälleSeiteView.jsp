@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+  
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+  <%@page import="FussballShop.bean.*" %>
+  
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +15,10 @@
 </head>
 <body>
 
+
+
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="art" class= "FussballShop.bean.Artikel" scope="session" />
 
 <div class="header">
     <div > <input class="mex1"  type="submit" name="Damen"  value="Damen" /> </div>
@@ -21,12 +29,12 @@
 </div>
 <form action =".\StartseiteAppl.jsp " method ="get">
 
-<div class="body">
-<div class="body1">
+<!--<div class="body">
+<div class="body1">				
 
 <div class="ball11">
 <div><a href="./bestellenView.jsp"><img class="img11"  alt="logo" src="../img1/ball1.jpeg?ball1=ball"></a></div>
-<div class="titel11">Derbystar Bundesliga Ball</div>
+<div class="titel11">   </div>
 <br>
 <div class="preis11">120 &euro;*</div>
 </div>
@@ -97,7 +105,25 @@
 </div>
 </div>
 
-<jsp:getProperty name="fsb" property="htmlFromArtikel" />
+-->
+
+<br>
+<br>
+
+
+
+
+<%//=fsb.getHtmlFromArtikel()  %>
+
+<!--<jsp:getProperty property="htmlOnlyAname" name="fsb"/>-->
+
+<jsp:getProperty property="htmlFromArtikel" name="fsb"/>
+
+
+
+
+
+
 
 </form>
 

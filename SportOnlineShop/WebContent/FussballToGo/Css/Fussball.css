@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";
+@@charset "ISO-8859-1";
 .header{
 	
 	display: flex;
@@ -309,5 +309,43 @@ margin-top: -20px;
 }
 
 body {
-	margin: 0 auto;
+	margin: 20px;
+}
+
+.cool{
+	background-color: #d3f4fb;  
+	border: solid 2px #bbbbbb ; 
+	position: relative ; 
+	font-size: 18px ; 
+	padding: 20px ; 
+	
+	
+	 
+}
+
+.btn {
+	position: relative;
+	background-color: #9c9c9c ; 
+	border: solid 1px ; 
+	padding: 15px 32px;
+	text-align: center ; 
+}
+
+img {
+	
+	max-width: 150px;
+	/*margin-left: 600px; */
+	border: solid ; 
+	background-color: white;
+	position: relative;
+	left: 500px ; 
+	
+}
+
+.buttons {
+	
+	position: relative;
+	left: 300px ; 
+	top: 200px ; 
+	
 }

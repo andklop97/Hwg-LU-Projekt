@@ -6,6 +6,12 @@ public class Artikel {
 	String aname; 
 	double preis; 
 	
+	
+	public Artikel () {
+		super() ;  
+	}
+	
+	
 	public Artikel (int anr, String aname, double preis) {
 		super(); 
 		this.anr= anr ; 
@@ -14,11 +20,31 @@ public class Artikel {
 	}
 	
 	
+	
+	
 	public String toKaestchen() {
-	String html=  "" ;
-	html+= " " + this.anr + " "+ this.aname+ " " + this.preis ; 
-	System.out.println(html);
-	return html ; 
+		String html = "";
+		html += "<div class='cool'>" + this.aname 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<input class='btn' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+ this.preis + " EUR " 
+	    
+		+ "<img src= '../imgFussbaelle/" + this.anr+ ".jpg' />"
+		+ "</div>"  + "<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
+	public String toAname () {
+		String html = ""; 
+		html+= ""+ this.aname ; 
+		System.out.println(html);
+		return html ; 
+		
 	}
 	
 	
@@ -45,6 +71,11 @@ public class Artikel {
 
 	public void setPreis(double preis) {
 		this.preis = preis;
+	}
+	
+	
+	public String toString() {
+		return "Artikel : Artikelnummer "+ this.anr + "Artikelname "+ this.aname + " Preis " + this.preis ; 
 	}
 	
 	
