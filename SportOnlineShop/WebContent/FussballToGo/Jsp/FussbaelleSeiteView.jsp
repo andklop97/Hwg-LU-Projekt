@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>FussbälleSeiteView</title>
+<title>FussbÃ¤lleSeiteView</title>
 <link  type="text/css" rel="stylesheet" href="../Css/Fussball.css"/>
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
