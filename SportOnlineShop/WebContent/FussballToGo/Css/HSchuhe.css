@@ -61,7 +61,7 @@ a{
 }
 body {
 	margin: 0 auto;
-	 background-image: url("../img1/UBildH.jpg");
+	 background-image: url("../ImgBackground/UBildH.jpg");
 	 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ body {
 	width: 400px;
 	height: 100px;
 	
-	background-image:url("../img1/nike.jpg");
+	background-image:url("../ImgBackground/nike.jpg");
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,7 +88,7 @@ body {
 .button2{
 	width: 400px;
 	height: 100px;
-	background-image:url("../img1/adidas.jpg");
+	background-image:url("../ImgBackground/adidas.jpg");
 	background-repeat: no-repeat;
 	background-position:center;
     background-size: cover;
@@ -99,7 +99,7 @@ body {
 .button3{
 	width: 400px;
 	height: 100px;
-	background-image:url("../img1/puma.jpg");
+	background-image:url("../ImgBackground/puma.jpg");
 	background-repeat: no-repeat;
 	background-position:center;
     background-size: cover;

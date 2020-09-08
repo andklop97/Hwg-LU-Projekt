@@ -61,7 +61,7 @@ a{
 }
 body {
 	margin: 0 auto;
-	 background-image: url("../img1/UBildH.jpeg");
+	 background-image: url("../ImgBackground/UBildH.jpeg");
 	 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ body {
 	width: 300px;
 	height: 60px;
 	
-	background-image:url("../img1/Deutsch.png");
+	background-image:url("../ImgBackground/Deutsch.jpg");
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,7 +88,7 @@ body {
 .button2{
 	width: 300px;
 	height: 60px;
-	background-image:url("../img1/Ital.jpg");
+	background-image:url("../ImgBackground/Ital.jpg");
 	background-repeat: no-repeat;
 	background-position:center;
     background-size: cover;
@@ -99,7 +99,7 @@ body {
 .button3{
 	width: 300px;
 	height: 60px;
-	background-image:url("../img1/Frank.jpg");
+	background-image:url("../ImgBackground/Frank.jpg");
 	background-repeat: no-repeat;
 	background-position:center;
     background-size: cover;
@@ -110,7 +110,7 @@ body {
 .button4{
 	width: 300px;
 	height: 60px;
-	background-image:url("../img1/Eng.png");
+	background-image:url("../ImgBackground/Eng.png");
 	background-repeat:no-repeat;
 	background-position:center;
     background-size: cover;
@@ -121,7 +121,7 @@ body {
 .button5{
 	width: 300px;
 	height: 60px;
-	background-image:url("../img1/Span.png");
+	background-image:url("../ImgBackground/Span.png");
 	background-repeat: no-repeat;
 	background-position:center;
     background-size: cover;
