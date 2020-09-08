@@ -18,7 +18,6 @@
 
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
-<jsp:useBean id="art" class= "FussballShop.bean.Artikel" scope="session" />
 
 <div class="header">
     <div > <input class="mex1"  type="submit" name="Damen"  value="Damen" /> </div>
@@ -27,7 +26,7 @@
    <div class="header-mitte"><input  type="submit" name="anmelden" value="anmelden"/></div>
    <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
 </div>
-<form action =".\StartseiteAppl.jsp " method ="get">
+
 
 <!--<div class="body">
 <div class="body1">				
@@ -112,20 +111,12 @@
 
 
 
-
 <%//=fsb.getHtmlFromArtikel()  %>
 
-<!--<jsp:getProperty property="htmlOnlyAname" name="fsb"/>-->
+
 
 <jsp:getProperty property="htmlFromArtikel" name="fsb"/>
 
-
-
-
-
-
-
-</form>
 
 
 

@@ -7,10 +7,6 @@ public class Artikel {
 	double preis; 
 	
 	
-	public Artikel () {
-		super() ;  
-	}
-	
 	
 	public Artikel (int anr, String aname, double preis) {
 		super(); 
@@ -24,27 +20,26 @@ public class Artikel {
 	
 	public String toKaestchen() {
 		String html = "";
-		html += "<div class='cool'>" + this.aname 
+		html += "<form action ='./FussbaelleSeiteAppl.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+this.aname 
 		+"<div class= 'buttons'>"
 		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
 		+ "<input class='btn' type= 'submit' name= 'bestellung' value= 'bestellen'>"
 		+ "</div>"
 		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
 		+ this.preis + " EUR " 
-	    
-		+ "<img src= '../imgFussbaelle/" + this.anr+ ".jpg' />"
-		+ "</div>"  + "<br>\n" ; 
+	    + "<img src= '../imgFussbaelle/" + this.anr+ ".jpg' />"
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
 				
 		System.out.println(html);
 		return html;
-	}
-	
-	public String toAname () {
-		String html = ""; 
-		html+= ""+ this.aname ; 
-		System.out.println(html);
-		return html ; 
-		
 	}
 	
 	
@@ -72,15 +67,7 @@ public class Artikel {
 	public void setPreis(double preis) {
 		this.preis = preis;
 	}
-	
-	
-	public String toString() {
-		return "Artikel : Artikelnummer "+ this.anr + "Artikelname "+ this.aname + " Preis " + this.preis ; 
-	}
-	
-	
-	
-	
+		
 
 }
 

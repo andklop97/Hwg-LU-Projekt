@@ -1,5 +1,6 @@
 package FussballShop.bean;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,6 +9,7 @@ import java.util.Vector;
 
 import de.hwg_lu.bw.jdbc.NoConnectionException;
 import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
+
 
 
 public class FussballToGoBean {
@@ -31,22 +33,22 @@ public class FussballToGoBean {
 		return html;
 	}
 	
-	public String getHtmlOnlyAname() {
-		String html = "" ; 
-		for(Artikel oneName : FussballSeiteArtikel) {
-			html+= oneName.toAname() ; 
-		}
+	
+	public void addBestellung (int anr, String aname, BigDecimal preis) throws SQLException {
+	
+		String sql="insert into bestellung (anr, aname, preis) values( ?, ?, ?) " ; 
+		System.out.println(sql);
+		Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+		PreparedStatement prep = dbConn.prepareStatement(sql) ; 
+		prep.setInt(1, anr);
+		prep.setString(2, aname);
+		prep.setBigDecimal(3, preis) ;
+		prep.executeUpdate();
 		
-		return html ; 
+		
 	}
 	
-	public void addBestellung () {
-		
-		String sql=""; 
-		
-		
-	}
-		
+	
 	
 	
 //	public void fetchArtikelName(int anr) throws SQLException {
