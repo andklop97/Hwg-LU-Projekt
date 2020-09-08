@@ -1,0 +1,191 @@
+@charset "ISO-8859-1";
+
+*.header{
+	
+	display: flex;
+	height: 45px;
+	width: 100%;
+	background-color: aliceblue;
+}
+
+.header-recht{
+	width: 60%;
+    display: inline-block;
+}
+
+.header-mitte{
+	
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    margin-right: 44px;
+    margin-top: 10px;
+  
+}
+
+.header-links{
+  display: inline-block;
+    width: 10%;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.menu{
+	min-height: calc(100vh - 90px);
+  
+    
+	   
+}
+
+.body{
+    display: flex;
+    width: 100%;
+}
+
+
+body{
+	margin: 0 auto;
+	 background-image:url("../img1/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+img{
+	width:100%;
+	margin:10px;
+	max-width:20%; 
+	max-height:20%; 
+	text-align:center; 
+}
+
+.hed{
+	display:flex;
+	margin-top: 10px;
+}
+*.mix{
+color:black;
+font-weight:normal;
+padding:10px;
+width:90px;
+height:22px;
+border:solid 0.5px #b8babc;
+border-radius:10px;
+
+
+}
+
+.erstes_H{
+	margin-left: 125px;
+    margin-top: 35px;
+}
+
+.footer{
+	height: 75px;
+	background-color: aliceblue;
+}
+.footer1{
+
+
+}
+.footer2{
+
+display: inline-block;
+  margin-left: 250px; 
+   	
+}
+.footer3{
+
+display: inline-block;
+  margin-left: 100px;
+ 
+    	
+}
+
+
+.img1{
+
+    margin-right:250px;
+	 background:url("../img1/Ball.jpg") no-repeat;
+	 margin-top: 86px;
+    background-size: cover;
+    background-position: center;
+	margin: auto;
+width:400px;
+    height: 110px;
+ display: flex;
+    align-items: center;
+        margin-top: 35px;
+	
+}
+.fussbälle{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: aliceblue;
+}
+.img2{
+
+    margin-right:250px;
+	 background:url("../img1/Schuhe.jpg") no-repeat;
+	 margin-top: 86px;
+    background-size: cover;
+    background-position: center;
+	margin: auto;
+width:400px;
+    height: 110px;
+ display: flex;
+    align-items: center;
+        margin-top: 35px;
+	
+}
+.Schuhe{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.img3{
+
+    margin-right:250px;
+	 background:url("../img1/Trikot.jpg") no-repeat;
+	 margin-top: 86px;
+    background-size: cover;
+    background-position: center;
+	margin: auto;
+width:400px;
+    height: 110px;
+ display: flex;
+    align-items: center;
+        margin-top: 35px;
+	
+}
+.Trikot{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: aliceblue;
+}
+a{
+	text-decoration: none;
+	color:black;
+
+}
+.a1{
+	text-decoration: none;
+	color:black;
+	
+}
+.a2{
+	text-decoration: none;
+	color:black;
+	margin-left: 10px;
+	
+}
+.a3{
+	text-decoration: none;
+	color:black;
+	margin-left: 10px;
+	
+}
+
