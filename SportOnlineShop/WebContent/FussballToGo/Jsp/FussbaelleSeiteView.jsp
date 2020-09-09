@@ -18,6 +18,7 @@
 
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="bestWb" class=FussballShop.bean.BestellungWarenkorb scope="session" />
 
 <div class="header">
     <div > <input class="mex1"  type="submit" name="Damen"  value="Damen" /> </div>

@@ -17,7 +17,7 @@
 <body>
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
-
+<jsp:useBean id="bestWb" class=FussballShop.bean.BestellungWarenkorb scope="session" />
 
 
 <%
@@ -46,7 +46,7 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 //}
 
 if(bestellung.equals("bestellen")) {
-	fsb.addBestellung(anr, artikelname, preis ); 
+	bestWb.addBestellung(anr, artikelname, preis ); 
 	response.sendRedirect("FussbaelleSeiteView.jsp") ; 
 }
 

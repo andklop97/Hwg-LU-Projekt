@@ -33,7 +33,7 @@ public class Artikel {
 		+ " <br> "
 		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
 		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
-	    + "<div class= 'bild'>"+ "<img src= '../imgFussbaelle/" + this.anr+ ".jpg' />" + "</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../img1/ImgBälle/" + this.anr+ ".jpg' />" + "</div>" 
 		+ "</div>"  
 		+ "</form>"
 		+"<br>\n" ; 
