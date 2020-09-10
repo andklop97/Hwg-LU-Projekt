@@ -39,7 +39,7 @@ a{
 .a0{
 	text-decoration: none;
 	color:red;
-	
+	margin-left: 10px;
 }
 .a1{
 	text-decoration: none;
@@ -58,6 +58,22 @@ a{
 	margin-left: 10px;
 	
 }
+.a5{
+	
+
+	margin-top: 10px;
+	margin-left: 900px;
+}
+
+.a6{
+	
+	
+	margin-top: 10px;
+
+margin-left: 20px;
+}
+
+
 body {
 	margin: 0 auto;
 	
@@ -68,7 +84,7 @@ body {
 }
 .Schuhe11{
 	width: 33%;
-	margin-left: 60px;
+	margin-left: 80px;
 	margin-top: 40px;
 }
 .titel11{
@@ -117,7 +133,7 @@ margin-left: -50px;
 }
 .Schuhe21{
 	width: 33%;
-	margin-left: 40px;
+	margin-left: 60px;
 	margin-top: 40px;
 }
 .titel21{
@@ -166,7 +182,7 @@ margin-left: -50px;
 }
 .Schuhe31{
 	width: 33%;
-	margin-left: 50px;
+	margin-left: 70px;
 	margin-top: 40px;
 }
 .titel31{

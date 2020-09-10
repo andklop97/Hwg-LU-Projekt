@@ -45,7 +45,7 @@
 
 body{
 	margin: 0 auto;
-	 background-image:url("../img1/Background.jpg");
+	 background-image:url("../ImgBackground/Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,7 +105,7 @@ display: inline-block;
 .img1{
 
     margin-right:250px;
-	 background:url("../img1/Ball.jpg") no-repeat;
+	 background:url("../ImgBackground/Ball.jpg") no-repeat;
 	 margin-top: 86px;
     background-size: cover;
     background-position: center;
@@ -114,7 +114,8 @@ width:400px;
     height: 110px;
  display: flex;
     align-items: center;
-        margin-top: 35px;
+        margin-top: 65px;
+        
 	
 }
 .fussbälle{
@@ -126,7 +127,7 @@ width:400px;
 .img2{
 
     margin-right:250px;
-	 background:url("../img1/Schuhe.jpg") no-repeat;
+	 background:url("../ImgBackground/Schuhe.jpg") no-repeat;
 	 margin-top: 86px;
     background-size: cover;
     background-position: center;
@@ -148,7 +149,7 @@ width:400px;
 .img3{
 
     margin-right:250px;
-	 background:url("../img1/Trikot.jpg") no-repeat;
+	 background:url("../ImgBackground/Trikot.jpg") no-repeat;
 	 margin-top: 86px;
     background-size: cover;
     background-position: center;
@@ -174,7 +175,7 @@ a{
 .a1{
 	text-decoration: none;
 	color:black;
-	
+	margin-left: 20px;
 }
 .a2{
 	text-decoration: none;
@@ -188,4 +189,20 @@ a{
 	margin-left: 10px;
 	
 }
+.a5{
+	
+
+	margin-top: 10px;
+	margin-left: 900px;
+}
+
+.a6{
+	
+	
+	margin-top: 10px;
+
+margin-left: 20px;
+}
+
+
 

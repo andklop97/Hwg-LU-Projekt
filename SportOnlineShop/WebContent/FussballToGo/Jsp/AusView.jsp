@@ -17,8 +17,8 @@
   <div > <a class="a3" href="./KinderView.jsp">Kinder</a> </div>
   </div>
     
-   <div class="header-mitte"><input  type="submit" name="anmelden" value="anmelden"/></div>
-   <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
+   <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>
+   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
    </div>
 <div class="body">
 

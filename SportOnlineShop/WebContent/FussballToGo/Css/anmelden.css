@@ -6,7 +6,6 @@
 	width: 100%;
 	background-color: aliceblue;
 }
-
 .header-recht{
 	width: 60%;
     display: inline-block;
@@ -32,15 +31,11 @@
 	display:flex;
 	margin-top: 10px;
 }
-a{
-	text-decoration: none;
-	color:black;
-	
-}
+
 .a0{
 	text-decoration: none;
 	color:red;
-	
+	margin-left: 10px;
 }
 .a1{
 	text-decoration: none;
@@ -73,51 +68,70 @@ a{
 
 margin-left: 20px;
 }
+
 body {
-	margin: 0 auto;
-	 background-image: url("../ImgBackground/UBildH.jpg");
-	 background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.body{
-   display:flex;
-    width: 100%;
-   
-}
-.menu{
-	
-}
-.button1{
-	width: 400px;
-	height: 100px;
-	
-	background-image:url("../ImgBackground/nike.jpg");
+	margin:0 auto;
+	background-image: url(../ImgBackground/Background.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	margin-top: 50px;
+}
+img{
+	width:40%;
+	margin:10px;
+	max-width:55%; 
+	max-height:20%; 
+	text-align:center; 
+}
+
+.a{
+margin-left: 300px;	
+margin-top: 30px;
+}
+.b{
+margin-left: 300px;
+margin-top: 30px;	
+}
+.c{
+margin-left: 300px;	
+margin-top: 30px;	
+
+}
+.anm{
+	color:white;
+background-color: black;
+border:none;
+height: 50px;
+width: 300px;
+margin-left: 65px;
+}
+.name{
+	
+	height: 30px;
+	width: 300px;
+}
+.pass{
+	
+	height: 30px;
+	width: 300px;
+	margin-left: 7px;
+}
+.titel{
+	margin-left: 420px;
+	width: 100px;
+	
+	
+}
+
+.d{
+	display:flex;
+	margin-top:20px;
 	margin-left: 300px;
 }
-.button2{
-	width: 400px;
-	height: 100px;
-	background-image:url("../ImgBackground/adidas.jpg");
-	background-repeat: no-repeat;
-	background-position:center;
-    background-size: cover;
-	margin-top: 30px;
-	margin-left: 300px;
-	 
+.left{
+	color:red;
 }
-.button3{
-	width: 400px;
-	height: 100px;
-	background-image:url("../ImgBackground/puma.jpg");
-	background-repeat: no-repeat;
-	background-position:center;
-    background-size: cover;
-	margin-top: 30px;
-	margin-left: 300px;
-	 
+.right{
+	color: aliceblue;
+	text-decoration: underline;
 }
