@@ -1,18 +1,11 @@
 <%@page import="java.math.BigDecimal"%>
-<%@page import="java.text.ParseException"%>
-<%@page import="java.text.DecimalFormat"%>
-<%@page import="java.text.NumberFormat"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
-<%@page import="FussballShop.bean.*" %>
-
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>FussbälleSeiteAppl</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
 
@@ -41,13 +34,14 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 
 if(bestellung.equals("bestellen")) {
 	fsb.addBestellung(anr, artikelname, preis) ; 
-	response.sendRedirect("FussbaelleSeiteView.jsp") ; 
+	response.sendRedirect("DTrikotView.jsp") ; 
 }
 
 
 else{
-	response.sendRedirect("./FussbaelleSeiteAppl.jsp") ; 
+	response.sendRedirect("DTrikotView.jsp") ; 
 }
 %>
+
 </body>
 </html>

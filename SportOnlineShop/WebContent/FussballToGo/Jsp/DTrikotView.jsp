@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>DschuheView</title>
-<link  type="text/css" rel="stylesheet" href="../Css/nike.css"/>
+<title>AusView</title>
+<link  type="text/css" rel="stylesheet" href="../Css/Aus.css"/>
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,10 +23,12 @@
    <div class="header-mitte"><input  type="submit" name="anmelden" value="anmelden"/></div>
    <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
    </div>
-   
-   <jsp:getProperty property="htmlFromDSchuheseite" name="fsb"/>
+
+
+<jsp:getProperty property="htmlFromDTrikotseite" name="fsb"/>
+
 
 </body>
 
-</body>
+
 </html>

@@ -9,6 +9,10 @@ import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 
 public class BestellungWarenkorb {
 	
+	public BestellungWarenkorb (){
+		super() ; 
+	}
+	
 	public void addBestellung (int anr, String aname, BigDecimal preis) throws SQLException {
 		
 		String sql="insert into bestellung (anr, aname, preis) values( ?, ?, ?) " ; 
