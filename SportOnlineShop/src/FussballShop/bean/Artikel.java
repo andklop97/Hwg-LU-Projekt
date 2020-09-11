@@ -15,6 +15,158 @@ public class Artikel {
 		this.preis= preis ; 
 	}
 	
+	public String toKTorwart() {
+		String html = "";
+		html += "<form action ='KTorwartApp.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
+		+ "<input class='btn1' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgKinderTorwart/" + this.anr+ ".jpg' />" + "</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
+	
+	public String toKFan() {
+		String html = "";
+		html += "<form action ='KFanApp.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
+		+ "<input class='btn1' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgKinderTrikot/" + this.anr+ ".jpg' />" + "</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
+	
+	
+	public String toKSchuhe() {
+		String html = "";
+		html += "<form action ='KSchuheApp.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
+		+ "<input class='btn1' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgKinderSchuhe/" + this.anr+ ".jpg' />" + "</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
+	
+	
+	public String toKFussball() {
+		String html = "";
+		html += "<form action ='KFussbaelleApp.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
+		+ "<input class='btn1' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgBälleKinder/" + this.anr+ ".jpg' />" + "</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
+	
+	
+	public String toHStutzen() {
+		String html = "";
+		html += "<form action ='HStutzenAppl.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
+		+ "<input class='btn1' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgStützen/" + this.anr+ ".jpg' />" + "</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
+	
+	public String toHFussball() {
+		String html = "";
+		html += "<form action ='HFussballApp.jsp' method ='get'>"
+		+"<div class='cool'>" 
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+"<input class='btn' type= 'submit' name= 'ware' value= 'in den Warenkorb'>" 
+		+ "<br>"
+		+ "<input class='btn1' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgBlle/" + this.anr+ ".jpg' />" + "</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
 	
 	public String toPuma() {
 		String html = "";

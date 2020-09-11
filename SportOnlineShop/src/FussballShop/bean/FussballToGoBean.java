@@ -29,6 +29,11 @@ public class FussballToGoBean {
 	Vector<Artikel> NikeArtikel ; 
 	Vector<Artikel> AdidasArtikel ;
 	Vector<Artikel> PumaArtikel  ;
+	Vector<Artikel> HStutzenArtikel ;
+	Vector<Artikel> KFussballArtikel ; 
+	Vector<Artikel> KSchuheArtikel ; 
+	Vector<Artikel> KFanArtikel ; 
+	Vector<Artikel> KTorwartArtikel  ; 
 	
 
 	public FussballToGoBean() throws SQLException {
@@ -46,6 +51,11 @@ public class FussballToGoBean {
 		this.NikeArtikel = new Vector<Artikel>();
 		this.AdidasArtikel = new Vector<Artikel>() ;
 		this.PumaArtikel = new Vector<Artikel>(); 
+		this.HStutzenArtikel= new Vector<Artikel>();
+		this.KFussballArtikel= new Vector<Artikel>();
+		this.KSchuheArtikel= new Vector<Artikel>();
+		this.KFanArtikel= new Vector<Artikel>();
+		this.KTorwartArtikel= new Vector<Artikel>(); 
 		
 		this.getFromFussballSeite();
 		this.getFussballschuheSeite();
@@ -61,6 +71,67 @@ public class FussballToGoBean {
 		this.getNikeSeite();
 		this.getAdidasSeite();
 		this.getPumaSeite();
+		this.getHStutzenSeite();
+		this.getKFussbaelleSeite();
+		this.getKSchuheSeite();
+		this.getKFanSeite();
+		this.getKTorwartSeite();
+	}
+	
+	
+	public String getHtmlFromKTorwart(){
+		String html = "";
+		for(Artikel oneArtikel : KTorwartArtikel){
+			html += oneArtikel.toKTorwart();
+		}
+		return html;
+	}
+	
+	
+	
+	public String getHtmlFromKFan(){
+		String html = "";
+		for(Artikel oneArtikel : KFanArtikel){
+			html += oneArtikel.toKFan();
+		}
+		return html;
+	}
+	
+	
+	public String getHtmlFromKSchuhe(){
+		String html = "";
+		for(Artikel oneArtikel : KSchuheArtikel){
+			html += oneArtikel.toKSchuhe();
+		}
+		return html;
+	}
+	
+	
+	
+	public String getHtmlFromKFussbaelle(){
+		String html = "";
+		for(Artikel oneArtikel : KFussballArtikel){
+			html += oneArtikel.toKFussball();
+		}
+		return html;
+	}
+	
+	
+	public String getHtmlFromHStutzen(){
+		String html = "";
+		for(Artikel oneArtikel : HStutzenArtikel){
+			html += oneArtikel.toHStutzen();
+		}
+		return html;
+	}
+	
+	
+	public String getHtmlFromHFussball(){
+		String html = "";
+		for(Artikel oneArtikel : FussballSeiteArtikel){
+			html += oneArtikel.toHFussball();
+		}
+		return html;
 	}
 	
 	
@@ -202,6 +273,109 @@ public class FussballToGoBean {
 		prep.executeUpdate();
 		
 		
+	}
+   
+   
+   
+   
+   public void getKTorwartSeite() throws SQLException {
+		String sql= "SELECT anr, aname, preis FROM kindertorwarthandschuhe" ; 
+		System.out.println(sql);
+	    Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+	    ResultSet dbRes= dbConn.createStatement().executeQuery(sql) ;
+	    
+	    
+	    while(dbRes.next()) {
+	    	int anr = dbRes.getInt("anr") ; 
+	    	String aname= dbRes.getString("aname") ; 
+	    	double preis= dbRes.getDouble("preis") ; 
+	    	
+	    	Artikel myArtikel= new Artikel(anr, aname, preis) ; 
+	    	
+	    	KTorwartArtikel.add(myArtikel); 
+	    }
+	}
+   
+   
+   
+   public void getKFanSeite() throws SQLException {
+		String sql= "SELECT anr, aname, preis FROM kindertrikots" ; 
+		System.out.println(sql);
+	    Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+	    ResultSet dbRes= dbConn.createStatement().executeQuery(sql) ;
+	    
+	    
+	    while(dbRes.next()) {
+	    	int anr = dbRes.getInt("anr") ; 
+	    	String aname= dbRes.getString("aname") ; 
+	    	double preis= dbRes.getDouble("preis") ; 
+	    	
+	    	Artikel myArtikel= new Artikel(anr, aname, preis) ; 
+	    	
+	    	KFanArtikel.add(myArtikel); 
+	    }
+	}
+  
+   
+   
+   
+   public void getKSchuheSeite() throws SQLException {
+		String sql= "SELECT anr, aname, preis FROM kinderschuhe" ; 
+		System.out.println(sql);
+	    Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+	    ResultSet dbRes= dbConn.createStatement().executeQuery(sql) ;
+	    
+	    
+	    while(dbRes.next()) {
+	    	int anr = dbRes.getInt("anr") ; 
+	    	String aname= dbRes.getString("aname") ; 
+	    	double preis= dbRes.getDouble("preis") ; 
+	    	
+	    	Artikel myArtikel= new Artikel(anr, aname, preis) ; 
+	    	
+	    	KSchuheArtikel.add(myArtikel); 
+	    }
+	}
+   
+   
+   
+   
+   public void getKFussbaelleSeite() throws SQLException {
+		String sql= "SELECT anr, aname, preis FROM kinderfussball" ; 
+		System.out.println(sql);
+	    Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+	    ResultSet dbRes= dbConn.createStatement().executeQuery(sql) ;
+	    
+	    
+	    while(dbRes.next()) {
+	    	int anr = dbRes.getInt("anr") ; 
+	    	String aname= dbRes.getString("aname") ; 
+	    	double preis= dbRes.getDouble("preis") ; 
+	    	
+	    	Artikel myArtikel= new Artikel(anr, aname, preis) ; 
+	    	
+	    	KFussballArtikel.add(myArtikel); 
+	    }
+	}
+  
+   
+   
+   public void getHStutzenSeite() throws SQLException {
+		String sql= "SELECT anr, aname, preis FROM herrenschutz" ; 
+		System.out.println(sql);
+	    Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+	    ResultSet dbRes= dbConn.createStatement().executeQuery(sql) ;
+	    
+	    
+	    while(dbRes.next()) {
+	    	int anr = dbRes.getInt("anr") ; 
+	    	String aname= dbRes.getString("aname") ; 
+	    	double preis= dbRes.getDouble("preis") ; 
+	    	
+	    	Artikel myArtikel= new Artikel(anr, aname, preis) ; 
+	    	
+	    	HStutzenArtikel.add(myArtikel); 
+	    }
 	}
    
    
