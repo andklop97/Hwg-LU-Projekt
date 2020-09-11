@@ -260,8 +260,28 @@ public class FussballToGoBean {
 	}
 	
 	
+public boolean addWarenkorb (int anr, String aname, BigDecimal preis) throws SQLException {
+		
+		String sql="insert into warenkorb (anr, aname, preis) values( ?, ?, ?) " ; 
+		System.out.println(sql);
+		Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+		PreparedStatement prep = dbConn.prepareStatement(sql) ; 
+		prep.setInt(1, anr);
+		prep.setString(2, aname);
+		prep.setBigDecimal(3, preis) ;
+		int erfolgreich = prep.executeUpdate(); 
+		
+		if(erfolgreich==1) {
+			return true ; 
+		}
+		else return false ; 
+		
+	}
 	
-   public void addBestellung (int anr, String aname, BigDecimal preis) throws SQLException {
+	
+	
+	
+   public boolean addBestellung (int anr, String aname, BigDecimal preis) throws SQLException {
 		
 		String sql="insert into bestellung (anr, aname, preis) values( ?, ?, ?) " ; 
 		System.out.println(sql);
@@ -270,8 +290,12 @@ public class FussballToGoBean {
 		prep.setInt(1, anr);
 		prep.setString(2, aname);
 		prep.setBigDecimal(3, preis) ;
-		prep.executeUpdate();
+		int erfolgreich = prep.executeUpdate(); 
 		
+		if(erfolgreich==1) {
+			return true ; 
+		}
+		else return false ; 
 		
 	}
    
