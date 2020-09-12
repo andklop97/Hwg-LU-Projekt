@@ -13,6 +13,7 @@
 
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 
 <div class="header">
@@ -27,6 +28,7 @@
    <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
    </div>
 
+<jsp:getProperty property="messageHtml" name="msg"/>
 
 <jsp:getProperty property="htmlFromHFussball" name="fsb"/>
 

@@ -33,8 +33,14 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 
 
 if(bestellung.equals("bestellen")) {
-	fsb.addBestellung(anr, artikelname, preis) ; 
-	msg.setBestellt() ; 
+	if(fsb.addBestellung(anr, artikelname, preis)){
+		msg.setBestellt() ; 
+	} 
+	response.sendRedirect("adidasView.jsp") ; 
+}else if(ware.equals("in den Warenkorb")){
+	if(fsb.addWarenkorb(anr, artikelname, preis)){
+		msg.setWarenkorb() ; 
+	}
 	response.sendRedirect("adidasView.jsp") ; 
 }
 

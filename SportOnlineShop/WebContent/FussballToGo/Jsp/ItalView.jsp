@@ -11,6 +11,7 @@
 <body>
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 <div class="header">
 <div class="hed">
@@ -26,7 +27,8 @@
    </div>
    
    
-   
+
+<jsp:getProperty property="messageHtml" name="msg"/>
 <jsp:getProperty property="htmlFromItal" name="fsb"/>
 
 

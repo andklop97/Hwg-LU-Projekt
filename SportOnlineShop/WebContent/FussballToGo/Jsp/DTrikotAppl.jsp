@@ -10,10 +10,12 @@
 <body>
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
+
 
 
 <%
-String ball1=request.getParameter("ball1");
+
 String bestellung = request.getParameter("bestellung")  ;
 String ware = request.getParameter("ware") ; 
 String artikelnummer = request.getParameter("artikelnummer") ; 
@@ -21,7 +23,7 @@ String artikelname = request.getParameter("artikelname") ;
 String artikelpreis= request.getParameter("artikelpreis") ; 
 
 
-if(ball1==null) ball1="";
+
 if(bestellung==null) bestellung= "" ; 
 if(ware==null) ware=""  ;  
 
@@ -33,7 +35,14 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 
 
 if(bestellung.equals("bestellen")) {
-	fsb.addBestellung(anr, artikelname, preis) ; 
+	if(fsb.addBestellung(anr, artikelname, preis)){
+		msg.setBestellt();
+	}
+	response.sendRedirect("DTrikotView.jsp") ; 
+}else if (ware.equals("in den Warenkorb")){
+	if(fsb.addWarenkorb(anr, artikelname, preis)){
+		msg.setWarenkorb(); 
+	}
 	response.sendRedirect("DTrikotView.jsp") ; 
 }
 
