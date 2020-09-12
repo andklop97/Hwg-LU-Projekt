@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>KFanApp.jsp</title>
+<title>KFussbälleApp.jsp</title>
 </head>
 <body>
 
@@ -35,14 +35,15 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 if(bestellung.equals("bestellen")) {
 	fsb.addBestellung(anr, artikelname, preis) ; 
 	msg.setBestellt() ; 
-	response.sendRedirect("KFanView.jsp") ; 
+	response.sendRedirect("KFussbaelleView.jsp") ; 
 }
 
 
 else{
-	response.sendRedirect("KFanView.jsp") ; 
+	response.sendRedirect("KFussbaelleView.jsp") ; 
 }
 %>
+
 
 </body>
 </html>

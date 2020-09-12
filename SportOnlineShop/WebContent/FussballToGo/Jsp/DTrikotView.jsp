@@ -4,36 +4,31 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PumaView</title>
-<link  type="text/css" rel="stylesheet" href="../Css/puma.css"/>
+<title>AusView</title>
+<link  type="text/css" rel="stylesheet" href="../Css/Aus.css"/>
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
-<body>
 <body>
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
 
 <div class="header">
 <div class="hed">
-
-
 <div > <a class="a0" href="./StartseiteView.jsp">Home</a> </div>
 <div > <a class="a1" href="./DamenView.jsp">Damen</a> </div>
   <div > <a class="a2" href="./HerrenView.jsp">Herren</a> </div>
   <div > <a class="a3" href="./KinderView.jsp">Kinder</a> </div>
   </div>
     
-    
-   <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>
-   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
+   <div class="header-mitte"><input  type="submit" name="anmelden" value="anmelden"/></div>
+   <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
    </div>
-   
-   
-   <jsp:getProperty property="htmlFromPuma" name="fsb"/>
 
 
+<jsp:getProperty property="htmlFromDTrikotseite" name="fsb"/>
 
 
 </body>
-</body>
+
+
 </html>

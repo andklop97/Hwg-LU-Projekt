@@ -9,6 +9,10 @@
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+<jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+
 <div class="header">
 <div class="hed">
 <div > <a class="a0" href="./StartseiteView.jsp">Home</a> </div>
@@ -22,81 +26,8 @@
    <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
    </div>
    
-   <form action="./KFussb‰lleApp.jsp">
-   <div class="body">
-<div class="body1">
-<div class="trikot11">
-<div><a href="./bestellenView.jsp"><img  alt="logo" src="../img1/BildK1.jpg?ball1=ball"></a></div>
-<div class="titel11">Kinder Kunstleder Ball Multicolor</div>
-<br>
-<div class="preis11">7,23 &euro;*</div>
-</div>
-
-<div class="trikot12">
-<div><a href="./bestellenView.jsp"><img   alt="logo" src="../img1/BildK2.jpg?ball1=ball"></a></div>
-<div class="titel12">Alomejor Kinder Fuﬂball Grˆﬂe 2 Sport</div>
-<br>
-<div class="preis12">17,99 &euro;*</div>
-</div>
-<div class="trikot13">
-<div><a href="./bestellenView.jsp"><img  alt="logo" src="../img1/BildK3.jpg?ball1=ball"></a></div>
-<div class="titel13">Derbystar Kinder Junior Light Fuﬂball</div>
-<br>
-<div class="preis13">19,49 &euro;*</div>
-</div>
-
-</div>
-
-
-<div class="body2">
-<div class="trikot11">
-<div><a href="./bestellenView.jsp"><img  alt="logo" src="../img1/BildK4.jpg?ball1=ball"></a></div>
-<div class="titel11">Offizielle Grˆﬂe 4 Kinder Fuﬂball</div>
-<br>
-<div class="preis11">11,49 &euro;*</div>
-</div>
-
-<div class="trikot12">
-<div><a href="./bestellenView.jsp"><img   alt="logo" src="../img1/BildK5.jpg?ball1=ball"></a></div>
-<div class="titel12">Kinder Fuﬂball Fuﬂball Weiﬂ </div>
-<br>
-<div class="preis12">6,10 &euro;*</div>
-</div>
-<div class="trikot23">
-<div><a href="./bestellenView.jsp"><img  alt="logo" src="../img1/Bildk6.jpg?ball1=ball"></a></div>
-<div class="titel23">Adidas Jungen Finale TTRN Turnierb‰lle</div>
-<br>
-<div class="preis23">34,11 &euro;*</div>
-</div>
-</div>
-
-<div class="body3">
-<div class="trikot11">
-<div><a href="./bestellenView.jsp"><img  alt="logo" src="../img1/Bildk7.jpg?ball1=ball"></a></div>
-<div class="titel11">Soft-Fuﬂball ¯ 20 cm - f¸r Kinder</div>
-<br>
-<div class="preis11">9,90 &euro;*</div>
-</div>
-
-<div class="trikot32">
-<div><a href="./bestellenView.jsp"><img   alt="logo" src="../img1/Bildk8.jpg?ball1=ball"></a></div>
-<div class="titel32">Fuﬂball Mini, 145 mm</div>
-<br>
-<div class="preis32">8,99 &euro;*</div>
-</div>
-<div class="trikot13">
-<div><a href="./bestellenView.jsp"><img  alt="logo" src="../img1/Bildk9.jpg?ball1=ball"></a></div>
-<div class="titel13">Kinder Fuﬂb‰lle SENZOR LITE 350</div>
-<br>
-<div class="preis13">29,99 &euro;*</div>
-</div>
-</div>
-
-
-
-
-</div>
-       </form>
+   
+      <jsp:getProperty property="htmlFromKFussbaelle" name="fsb"/>
 
 
 </body>

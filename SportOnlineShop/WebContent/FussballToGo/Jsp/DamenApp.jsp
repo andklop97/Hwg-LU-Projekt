@@ -19,7 +19,7 @@ if(Train==null) Train="";
 
 
 if(Trik.equals("Trikots")){
-	response.sendRedirect("./AusView.jsp");
+	response.sendRedirect("./DTrikotView.jsp");
 }
 else if(Schuhe.equals("Fussballschuhe")){
 	response.sendRedirect("DschuheView.jsp");

@@ -11,8 +11,11 @@ public class PostgreSQLAccess extends JDBCAccess {
 		dbUser       = "user1";
 		dbPassword   = "pgusers";
 //		dbURL        = "jdbc:postgresql://localhost:5432/BWUEBDB";
-	//	dbUser       = "postgres";
-// dbPassword   = "pgadmin";
+
+
+//		dbUser       = "postgres";
+//		dbPassword   = "pgadmin";
+
 		dbSchema     = "bw440_MuA"; // hier Matrikelnummer eintragen
 		
 	}

@@ -54,19 +54,6 @@
 	margin-left: 10px;
 	
 }
-.a5{
-	
-
-	margin-top: 10px;
-	margin-left: 900px;
-}
-
-.a6{
-	
-	
-	margin-top: 10px;
-
-margin-left: 20px;
 }
 
 body {
@@ -83,55 +70,88 @@ img{
 	max-height:20%; 
 	text-align:center; 
 }
-
-.a{
-margin-left: 400px;	
-margin-top: 30px;
+.titel{
+	margin-top: 20px;
+	
+	margin-left:500px; 
 }
-.b{
-margin-left: 400px;
-margin-top: 30px;	
+.b{ 
+	border:double;
+	width: 450px;
+	height: 210px;
+	margin-left:400px;
+	margin-top: 20px;
 }
-.c{
-margin-left: 400px;	
-margin-top: 30px;	
-
+.check{
+	
+	color:black;
+	width:20px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 10px;
 }
-.anm{
-	color:white;
+.p{margin-top:-20px;
+	margin-left: 40px;
+	
+}
+.mail{
+	height: 30px;
+	width: 300px;
+	margin-left: 25px;
+}
+.name{
+	height: 30px;
+	width: 300px;
+	margin-left: 5px;
+}
+.reg{
+color:white;
 background-color: black;
 border:none;
 height: 50px;
 width: 300px;
-margin-left: 65px;
-}
-.name{
-	
-	height: 30px;
-	width: 300px;
+margin-left: 65px;	
 }
 .pass{
-	
 	height: 30px;
 	width: 300px;
-	margin-left: 7px;
+	margin-left: 10px;
 }
-.titel{
-	margin-left: 520px;
-	width: 100px;
-	
-	
-}
+.u{
+margin-left:400px;	
 
+}
+.m{
+margin-left:400px;
+margin-top: 20px;	
+}
+.pa{
+margin-left:400px;
+margin-top: 20px;	
+}
+.r{
+margin-left:400px;
+margin-top: 20px;	
+}
 .d{
 	display:flex;
 	margin-top:20px;
-	margin-left: 400px;
+	margin-left: 450px;
 }
 .left{
 	color:red;
 }
 .right{
-	color: aliceblue;
+	color: black
+	;
 	text-decoration: underline;
+}
+.agb{
+	color: green;
+}
+.menu{
+	background-image: url(../ImgBackground/Background.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

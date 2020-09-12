@@ -38,7 +38,7 @@
   
    <div class="img1">
       <div class="fussbälle">
-      <div> <a href="./FussbälleSeiteView.jsp">Fussbälle</a></div>
+      <div> <a href="./FussbaelleSeiteView.jsp">Fussbälle</a></div>
     </div>
     </div>
     <div class="img2">

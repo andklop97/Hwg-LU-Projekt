@@ -18,6 +18,7 @@
 
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 <div class="header">
     <div > <input class="mex1"  type="submit" name="Damen"  value="Damen" /> </div>
@@ -30,16 +31,11 @@
 
 
 
-<br>
-<br>
+
+<jsp:getProperty property="messageHtml" name="msg"/>
 
 
-
-<%//=fsb.getHtmlFromArtikel()  %>
-
-
-
-<jsp:getProperty property="htmlFromArtikel" name="fsb"/>
+<jsp:getProperty property="htmlFromFussballseite" name="fsb"/>
 
 
 
