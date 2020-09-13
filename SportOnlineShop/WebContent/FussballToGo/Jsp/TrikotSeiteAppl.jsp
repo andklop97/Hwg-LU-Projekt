@@ -41,6 +41,7 @@ if(bestellung.equals("bestellen")) {
 	if(fsb.addWarenkorb(anr, artikelname, preis)){
 		msg.setWarenkorb(); 
 	}
+	response.sendRedirect("TrikotSeiteView.jsp") ; 
 }
 
 
