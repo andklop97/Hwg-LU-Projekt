@@ -91,6 +91,7 @@ border-radius:10px;
 
 display: inline-block;
   margin-left: 250px; 
+  margin-top: -300px;
    	
 }
 .footer3{
@@ -204,5 +205,7 @@ a{
 margin-left: 20px;
 }
 
-
+.footer21{
+	margin-bottom: -10px;
+}
 

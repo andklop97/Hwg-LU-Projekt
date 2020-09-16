@@ -107,7 +107,7 @@ public class Artikel {
 		+ " <br> "
 		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
 		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
-	    + "<div class= 'bild'>"+ "<img src= '../ImgBälleKinder/" + this.anr+ ".jpg' />" + "</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgBlleKinder/" + this.anr+ ".jpg' />" + "</div>" 
 		+ "</div>"  
 		+ "</form>"
 		+"<br>\n" ; 
@@ -133,7 +133,7 @@ public class Artikel {
 		+ " <br> "
 		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
 		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
-	    + "<div class= 'bild'>"+ "<img src= '../ImgStützen/" + this.anr+ ".jpg' />" + "</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../ImgStuetzen/" + this.anr+ ".jpg' />" + "</div>" 
 		+ "</div>"  
 		+ "</form>"
 		+"<br>\n" ; 
@@ -386,7 +386,7 @@ public class Artikel {
 		+ " <br> "
 		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
 		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
-	    + "<div class= 'bild'>"+ "<img src= '../ImgD/" + this.anr+ ".jpg' />" + "</div>" 
+	    + "<div class= 'bild'>"+ "<img src= '../Druestung/" + this.anr+ ".jpg' />" + "</div>" 
 		+ "</div>"  
 		+ "</form>"
 		+"<br>\n" ; 

@@ -10,7 +10,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>FussbÃ¤lleSeiteView</title>
-<link  type="text/css" rel="stylesheet" href="../Css/Fussball.css"/>
+<link  type="text/css" rel="stylesheet" href="../Css/Hfussball.css"/>
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,12 +21,16 @@
 <jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 <div class="header">
-    <div > <input class="mex1"  type="submit" name="Damen"  value="Damen" /> </div>
-  <div > <input class="mex2"  type="submit" name="Damen" value="Herren"/> </div>
-  <div > <input class="mex3"  type="submit" name="Damen" value="Kinder"/> </div>
-   <div class="header-mitte"><input  type="submit" name="anmelden" value="anmelden"/></div>
-   <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
-</div>
+<div class="hed">
+<div > <a class="a0" href="./StartseiteView.jsp">Home</a> </div>
+<div > <a class="a1" href="./DamenView.jsp">Damen</a> </div>
+  <div > <a class="a2" href="./HerrenView.jsp">Herren</a> </div>
+  <div > <a class="a3" href="./KinderView.jsp">Kinder</a> </div>
+  </div>
+     
+   <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>
+   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
+   </div>
 
 
 

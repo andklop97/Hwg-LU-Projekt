@@ -65,13 +65,13 @@
 <br><br>
 <div class="footer">
 <div class="footer1">
- Ludwigshafen, Deuschland <br>
+ Ludwigshafen, Deuschland <br> 
 Service@FussballToGo
 </div>
 
 
- <div class="footer2">  <div>Über uns</div> 
-  <div >FussballToGo</div> 
+ <div class="footer2">  <div class="footer21" >Über uns</div> 
+  <div class="footer22">FussballToGo</div> 
  </div> 
  <div class="footer3"> 
  <input  type="submit" name="Kontakt" value="KONTAKT AUFNEHMEN"/>

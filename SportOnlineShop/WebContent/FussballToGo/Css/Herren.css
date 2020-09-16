@@ -74,33 +74,35 @@ body {
 	
 }
 .button1{
-	width: 300px;
-	height: 60px;
+	width: 400px;
+	height: 80px;
 	background-color:aliceblue;
 	margin-top: 50px;
-	margin-left: 300px;
+	margin-left: 450px;
+		border:double;
 }
 .button2{
-	width: 300px;
-	height: 60px;
+	width: 400px;
+	height: 80px;
 	background-color:aliceblue;
 	margin-top: 30px;
-	margin-left: 300px;
-	 
+	margin-left: 450px;
+	 	border:double;
 }
 .button3{
-	width: 300px;
-	height: 60px;
+	width: 400px;
+	height: 80px;
 	background-color:aliceblue;
 	margin-top: 30px;
-	margin-left: 300px;
-	 
+	margin-left: 450px;
+	 	border:double;
 }
 .button4{
-	width: 300px;
-	height: 60px;
+	width: 400px;
+	height: 80px;
 	background-color:aliceblue;
 	margin-top: 30px;
-	margin-left: 300px;
+	margin-left: 450px;
+		border:double;
 	 
 }

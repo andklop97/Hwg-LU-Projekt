@@ -19,17 +19,11 @@
   <div > <a class="a2" href="./HerrenView.jsp">Herren</a> </div>
   <div > <a class="a3" href="./KinderView.jsp">Kinder</a> </div>
   </div>
-  
+  <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>
+   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
   </div>
     
-<<<<<<< HEAD
-   <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>
-   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
-   </div>
-=======
-   <div class="header-mitte"><input  type="submit" name="anmelden" value="anmelden"/></div>
-   <div class="header-links"><input  type="submit" name="reg" value="registrieren"/></div>
->>>>>>> branch 'master' of https://github.com/andklop97/Hwg-LU-Projekt.git
+
    
    
    <jsp:getProperty property="htmlFromDeutsch" name="fsb"/>

@@ -239,9 +239,50 @@ margin-left:70px;
 	margin-left: 420px;
 }
 img{
-	width:40%;
+	width:20%;
 	margin:10px;
 	max-width:55%; 
 	max-height:20%; 
 	text-align:center; 
+}
+.cool{
+
+	background-color: aliceblue;
+	 width: 110%;
+}
+.bild{
+	margin-left: 200px;
+	margin-top: -50px;
+	
+}
+
+.titel{
+	margin-left: 600px;
+margin-top: 30px;
+font-family:inherit;
+}
+.btn{
+	margin-left: 600px;
+	margin-top: 40px;
+	border:none;
+	color:white;
+	background-color: black;
+	width: 200px;
+	height: 40px;
+	font-family:arial;
+}
+.btn1{
+	margin-left: 600px;
+	margin-top: 30px;
+	border:none;
+	color:white;
+	background-color: gray;
+	width: 200px;
+	height: 40px;
+	font-family:arial;
+}
+.b{
+	margin-left: 600px;
+	margin-top: -160px;
+	color:red;
 }

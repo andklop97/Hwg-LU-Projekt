@@ -13,12 +13,12 @@
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
 
 <div class="header">
-<div class="hed">
+
 <div > <a class="a0" href="./StartseiteView.jsp">Home</a> </div>
 <div > <a class="a1" href="./DamenView.jsp">Damen</a> </div>
   <div > <a class="a2" href="./HerrenView.jsp">Herren</a> </div>
   <div > <a class="a3" href="./KinderView.jsp">Kinder</a> </div>
-  </div>
+  
     
     
    <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>

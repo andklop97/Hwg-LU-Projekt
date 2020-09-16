@@ -75,25 +75,31 @@ body {
 	
 }
 .button1{
-	width: 350px;
-	height: 70px;
-	background-color:aliceblue;
+	width: 400px;
+	height: 80px;
+	background-color:white;
 	margin-top: 70px;
 	margin-left: 450px;
+	color: black;
+border:double;
 }
 .button2{
-	width: 350px;
-	height: 70px;
-	background-color:aliceblue;
+	width: 400px;
+	height: 80px;
+	background-color:white;
 	margin-top: 50px;
 	margin-left: 450px;
+	 color: black;
+	border:double;
 	 
 }
 .button3{
-	width: 350px;
-	height: 70px;
-	background-color:aliceblue;
+	width: 400px;
+	height: 80px;
+	background-color:white;
 	margin-top: 50px;
 	margin-left: 450px;
+	 color: black;
+border:double;
 	 
 }
