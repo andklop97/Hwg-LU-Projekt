@@ -11,6 +11,7 @@
 <body>
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 <div class="header">
 <div class="hed">
@@ -24,7 +25,15 @@
   </div>
     
 
+<<<<<<< HEAD
    
+=======
+   <div class="a5"><a  href="./anmeldenView.jsp">Anmelden</a> </div>
+   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
+  
+
+   <jsp:getProperty property="messageHtml" name="msg"/>
+>>>>>>> branch 'master' of https://github.com/andklop97/Hwg-LU-Projekt.git
    
    <jsp:getProperty property="htmlFromDeutsch" name="fsb"/>
    

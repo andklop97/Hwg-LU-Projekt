@@ -9,25 +9,26 @@
 </head>
 <body>
 
-
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
 <jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 <%
 
 String bestellung = request.getParameter("bestellung")  ;
-String ware = request.getParameter("ware") ; 
+String wkid = request.getParameter("wkid"); 
 String artikelnummer = request.getParameter("artikelnummer") ; 
 String artikelname = request.getParameter("artikelname") ; 
 String artikelpreis= request.getParameter("artikelpreis") ; 
+String entf = request.getParameter("entf") ; 
 
 
 
 if(bestellung==null) bestellung= "" ; 
-if(ware==null) ware=""  ;  
+
 
 
 int anr = Integer.parseInt(artikelnummer) ; 
+int warenkorbid = Integer.parseInt(wkid) ; 
 
 BigDecimal preis= new BigDecimal(artikelpreis) ; 
 
@@ -36,18 +37,16 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 if(bestellung.equals("bestellen")) {
 	if(fsb.addBestellung(anr, artikelname, preis)){
 		msg.setBestellt() ;
+		fsb.deleteFromWarenkorb(warenkorbid) ; 
 	} 
-	response.sendRedirect("HStutzenView.jsp") ; 
-} else if(ware.equals("in den Warenkorb")){
-	if(fsb.addWarenkorb(anr, artikelname, preis)){
-		msg.setWarenkorb() ; 
-	}
-	response.sendRedirect("HStutzenView.jsp") ; 
+	response.sendRedirect("WarenkorbView.jsp") ; 
+}else if(entf.equals("entfernen")){
+	fsb.deleteFromWarenkorb(warenkorbid) ;
+	response.sendRedirect("WarenkorbView.jsp") ; 
 }
 
-
 else{
-	response.sendRedirect("HStutzenView.jsp") ; 
+	response.sendRedirect("WarenkorbView.jsp") ; 
 }
 %>
 

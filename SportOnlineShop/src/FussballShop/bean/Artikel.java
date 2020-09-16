@@ -5,6 +5,7 @@ public class Artikel {
 	int anr; 
 	String aname; 
 	double preis; 
+	int wkid ; 
 	
 	
 	
@@ -14,6 +15,42 @@ public class Artikel {
 		this.aname= aname ; 
 		this.preis= preis ; 
 	}
+	
+	public Artikel (int anr, String aname, double preis, int wkid) {
+		super(); 
+		this.anr= anr ; 
+		this.aname= aname ; 
+		this.preis= preis ;
+		this.wkid = wkid; 
+	}
+	
+	
+	
+	
+	public String toWarenkorb() {
+		String html = "";
+		html += "<form action ='WarenkorbAppl.jsp' method ='get'>"
+		+"<div class='cool'>"
+		+"<input type='hidden' name= 'wkid' value= '" + this.wkid + "' > "
+		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
+		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
+		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<div class= 'buttons'>"
+		+ "<br>"
+		+ "<input class='btn' type= 'submit' name= 'bestellung' value= 'bestellen'>"
+		+ "<input class='btn1' type= 'submit' name= 'entf' value= 'entfernen'>"
+		+ "</div>"
+		+ " <br> "
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
+		+ "</div>"  
+		+ "</form>"
+		+"<br>\n" ; 
+				
+		System.out.println(html);
+		return html;
+	}
+	
 	
 	public String toKTorwart() {
 		String html = "";
@@ -448,7 +485,7 @@ public class Artikel {
 	
 	public String toTrikot() {
 		String html = "";
-		html += "<form action ='./FussballschuheSeiteAppl.jsp' method ='get'>"
+		html += "<form action ='./TrikotSeiteAppl.jsp' method ='get'>"
 		+"<div class='cool'>" 
 		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
 		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 

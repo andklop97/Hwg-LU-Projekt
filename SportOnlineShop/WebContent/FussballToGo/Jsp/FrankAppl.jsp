@@ -33,12 +33,16 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 
 
 if(bestellung.equals("bestellen")) {
-	fsb.addBestellung(anr, artikelname, preis) ; 
+	if(fsb.addBestellung(anr, artikelname, preis)){
 	msg.setBestellt() ; 
+	}
 	response.sendRedirect("FrankView.jsp") ; 
+}else if(ware.equals("in den Warenkorb")){
+	if(fsb.addWarenkorb(anr, artikelname, preis)){
+		msg.setWarenkorb() ; 
+	}
+	response.sendRedirect("FrankView.jsp") ;
 }
-
-
 else{
 	response.sendRedirect("FrankView.jsp") ; 
 }

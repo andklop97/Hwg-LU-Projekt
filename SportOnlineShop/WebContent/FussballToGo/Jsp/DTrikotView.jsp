@@ -11,6 +11,7 @@
 <body>
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
+<jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 <div class="header">
 <div class="hed">
@@ -24,6 +25,7 @@
    <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
    </div>
 
+<jsp:getProperty property="messageHtml" name="msg"/>
 
 <jsp:getProperty property="htmlFromDTrikotseite" name="fsb"/>
 

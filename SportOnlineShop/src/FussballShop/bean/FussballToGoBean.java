@@ -34,6 +34,7 @@ public class FussballToGoBean {
 	Vector<Artikel> KSchuheArtikel ; 
 	Vector<Artikel> KFanArtikel ; 
 	Vector<Artikel> KTorwartArtikel  ; 
+	Vector<Artikel> WarenkorbArtikel ; 
 	
 
 	public FussballToGoBean() throws SQLException {
@@ -56,6 +57,7 @@ public class FussballToGoBean {
 		this.KSchuheArtikel= new Vector<Artikel>();
 		this.KFanArtikel= new Vector<Artikel>();
 		this.KTorwartArtikel= new Vector<Artikel>(); 
+		this.WarenkorbArtikel= new Vector<Artikel>(); 
 		
 		this.getFromFussballSeite();
 		this.getFussballschuheSeite();
@@ -76,6 +78,16 @@ public class FussballToGoBean {
 		this.getKSchuheSeite();
 		this.getKFanSeite();
 		this.getKTorwartSeite();
+		this.getShowWarenkorb();
+	}
+	
+	
+	public String getHtmlFromWarenkorb(){
+		String html = "";
+		for(Artikel oneArtikel : WarenkorbArtikel){
+			html += oneArtikel.toWarenkorb();
+		}
+		return html;
 	}
 	
 	
@@ -257,6 +269,42 @@ public class FussballToGoBean {
 			html += oneArtikel.toFussbaelle() ;
 		}
 		return html;
+	}
+	
+	
+	public void deleteFromWarenkorb(int wkid) throws SQLException {
+		String sql="delete from warenkorb where wkid= ?" ; 
+		System.out.println(sql);
+		Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+		PreparedStatement prep = dbConn.prepareStatement(sql) ; 
+		prep.setInt(1, wkid);
+	    prep.executeUpdate(); 
+		
+		
+		
+	}
+	
+	
+		
+	
+	
+	public void getShowWarenkorb() throws SQLException {
+		String sql= "SELECT wkid, anr, aname, preis FROM Warenkorb" ; 
+		System.out.println(sql);
+	    Connection dbConn= new PostgreSQLAccess().getConnection() ; 
+	    ResultSet dbRes= dbConn.createStatement().executeQuery(sql) ;
+	    
+	    
+	    while(dbRes.next()) {
+	    	int anr = dbRes.getInt("anr") ; 
+	    	String aname= dbRes.getString("aname") ; 
+	    	double preis= dbRes.getDouble("preis") ;
+	    	int wkid = dbRes.getInt("wkid") ; 
+	    	
+	    	Artikel myArtikel= new Artikel(anr, aname, preis, wkid) ; 
+	    	
+	    	WarenkorbArtikel.add(myArtikel); 
+	    }
 	}
 	
 	
