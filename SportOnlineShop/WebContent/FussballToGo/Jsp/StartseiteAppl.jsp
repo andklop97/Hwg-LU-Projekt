@@ -8,6 +8,13 @@
 </head>
 <body>
 <%
+String Kontakt=request.getParameter("Kontakt");
+if(Kontakt==null)Kontakt="";
+if(Kontakt.equals("KONTAKT AUFNEHMEN")){
+	response.sendRedirect("./KontaktView.jsp");
+}else {
+	response.sendRedirect("./StartseiteView.jsp");
+}
 
 
 %>

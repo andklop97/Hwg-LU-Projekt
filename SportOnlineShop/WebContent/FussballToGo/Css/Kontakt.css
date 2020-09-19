@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+table {
+	border:solid;
+	width:600px;
+	height: 300px;
+	margin-left: 300px;
+}
+td{
+	border:double;
+	text-align: center;
+}
+tr{
+	
+}
+
+h1{
+	color:aliceblue;
+	margin-left: 450px;
+}
+
+body{
+	margin: 0 auto;
+	 background-image:url("../ImgBackground/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.c{
+	color:white;
+}
