@@ -4,8 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>StartseiteView</title>
-<link  type="text/css" rel="stylesheet" href="../Css/Startseite.css"/>
+<title>StartseiteView2</title>
+
+
+<link  type="text/css" rel="stylesheet" href="../Css/Startseite2.css"/>
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,8 +23,7 @@
   <div class="hed2">
   
     <div class="a4"> <a class="link"  href="./WarenkorbView.jsp"><img class="Warbu" alt="" src="../ImgBackground/Warbu.jpg"> Warenkorb</a> </div>
-   <div class="a5"><a   href="./anmeldenView.jsp">Anmelden</a> </div>
-   <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
+  
    </div>
 </div>
 
@@ -82,10 +83,5 @@
  
 </div>
 </form>
-
-<!-- <img alt="logo" src="../img/logo3.png">s  -->
-
-
-
 </body>
 </html>

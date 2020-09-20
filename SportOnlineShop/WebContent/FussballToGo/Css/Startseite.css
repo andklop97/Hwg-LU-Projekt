@@ -84,20 +84,19 @@ border-radius:10px;
 	background-color: aliceblue;
 }
 .footer1{
-
+display: flex;
 
 }
 .footer2{
 
-display: inline-block;
-  margin-left: 250px; 
-  margin-top: -300px;
+display: flex;
+  
    	
 }
 .footer3{
-
+margin-top:-40px;
 display: inline-block;
-  margin-left: 100px;
+  margin-left: 1000px;
  
     	
 }
@@ -190,22 +189,62 @@ a{
 	margin-left: 10px;
 	
 }
+.a4{
+	
+margin-left:400px;
+	
+	
+	
+}
 .a5{
 	
 
-	margin-top: 10px;
-	margin-left: 900px;
+	margin-top: 15px;
+	margin-left:-140px;
 }
 
 .a6{
 	
 	
-	margin-top: 10px;
+	margin-top: 15px;
 
 margin-left: 20px;
 }
 
-.footer21{
-	margin-bottom: -10px;
-}
 
+
+.Warbu{
+
+	
+	width:10%;
+	margin:10px;
+	max-width:55%; 
+	max-height:20%; 
+	text-align:center; 
+	
+}
+.hed2{
+	margin-left:300px;
+	display: flex;
+}
+.link{
+	color:orange;
+}
+.footer11{
+	margin-left: 300px;
+}
+.footer21{
+	margin-left: 220px;
+}
+.titel{
+	display:flex;
+	color:red;
+}
+.bu{
+	background-color: gray;
+	border:double;
+	width:200px;
+	height:30px;
+	
+	
+}
