@@ -12,8 +12,9 @@
 <jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 
-<jsp:getProperty property="messageHtml" name="msg"/>
-<jsp:getProperty property="htmlFromWarenkorb" name="fsb"/>
+<div class="message"> <jsp:getProperty property="messageHtml" name="msg"/> </div>
+
+<jsp:getProperty property="htmlFromWarenkorb" name="fsb"/> 
 
 
 </body>

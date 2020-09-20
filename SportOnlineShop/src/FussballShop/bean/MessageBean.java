@@ -26,6 +26,10 @@ public class MessageBean {
 		message = "Artikel wurde erfolgreich in den Warenkorb gelegt" ; 
 	}
 	
+	public void setEntfernt() {
+		message= "Das Produkt wurde erfolgreich aus dem Warenkorb entfernt" ; 
+	}
+	
 	
 	public String getMessage() {
 		return message;
