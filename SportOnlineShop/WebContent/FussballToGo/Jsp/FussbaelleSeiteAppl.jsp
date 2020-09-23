@@ -18,6 +18,7 @@
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
 <jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
+<jsp:useBean id="acc" class="FussballShop.bean.anmeldenBean" scope="session" />
 
 
 <%
@@ -39,16 +40,15 @@ int anr = Integer.parseInt(artikelnummer) ;
 BigDecimal preis= new BigDecimal(artikelpreis) ; 
 
  
-
-
-
 if(bestellung.equals("bestellen")) {
+	
+
 	if(fsb.addBestellung(anr, artikelname, preis)){
 		msg.setBestellt(); 
 	}
-	response.sendRedirect("FussbaelleSeiteView.jsp") ; 
-}
 
+	response.sendRedirect("FussbaelleSeiteView.jsp") ;
+}  
 else if(ware.equals("in den Warenkorb")) {
 	if(fsb.addWarenkorb(anr,artikelname ,preis)){
 		msg.setWarenkorb(); 

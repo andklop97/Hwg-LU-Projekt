@@ -24,11 +24,20 @@
    <div class="a6"><a  href="./RegView.jsp">Registrieren</a></div>
   </div>
     
+<<<<<<< HEAD
 
+=======
 
+>>>>>>> branch 'master' of https://github.com/andklop97/Hwg-LU-Projekt.git
+
+<<<<<<< HEAD
    
 
    <jsp:getProperty property="messageHtml" name="msg"/>
+=======
+   <jsp:getProperty property="messageHtml" name="msg"/>
+
+>>>>>>> branch 'master' of https://github.com/andklop97/Hwg-LU-Projekt.git
    
    <jsp:getProperty property="htmlFromDeutsch" name="fsb"/>
    

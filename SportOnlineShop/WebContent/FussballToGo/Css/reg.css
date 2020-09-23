@@ -72,8 +72,8 @@ img{
 }
 .titel{
 	margin-top: 20px;
-	
 	margin-left:500px; 
+	color: white; 
 }
 .b{ 
 	border:double;
@@ -154,4 +154,10 @@ margin-top: 20px;
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.regMsg{
+	text-align: center; 
+	color: red ; 
+	margin-left: -100px
 }

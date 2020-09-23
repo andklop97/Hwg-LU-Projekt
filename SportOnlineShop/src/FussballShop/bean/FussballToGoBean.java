@@ -272,13 +272,17 @@ public class FussballToGoBean {
 	}
 	
 	
-	public void deleteFromWarenkorb(int wkid) throws SQLException {
+	public boolean deleteFromWarenkorb(int wkid) throws SQLException {
 		String sql="delete from warenkorb where wkid= ?" ; 
 		System.out.println(sql);
 		Connection dbConn= new PostgreSQLAccess().getConnection() ; 
 		PreparedStatement prep = dbConn.prepareStatement(sql) ; 
 		prep.setInt(1, wkid);
-	    prep.executeUpdate(); 
+	    int erfolgreich = prep.executeUpdate(); 
+	    
+	    if(erfolgreich==1) {
+	    	return true ;
+	    } else return false ; 
 		
 		
 		

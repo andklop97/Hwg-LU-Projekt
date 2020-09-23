@@ -4,9 +4,9 @@ public class MessageBean {
 
 	
 	String message ; 
-	String message2;
+	//String message2;
 	public MessageBean() {
-		
+		this.setStandardMessage();
 	
 	}
 	
@@ -14,12 +14,9 @@ public class MessageBean {
 	
 	public void setStandardMessage () {
 		message = "Sie können etwas bestellen oder in den Warenkorb legen"
-				+". Viel Spaß beim Shoppen"; 
+				+". Viel Spaß beim Shoppen!"; 
 	}
 	
-	public void setNull(){
-	
-	}
 	
 	public void setLoginSuccessful() {
 		message="Sie k�nnen jetzt bestellen";
@@ -41,9 +38,12 @@ public class MessageBean {
 	public void setWarenkorb () {
 		message = "Artikel wurde erfolgreich in den Warenkorb gelegt" ; 
 	}
-	public void SetUser(){
-		message="Konto erfolgreich erstellt";
+
+	
+	public void setEntfernt() {
+		message= "Das Produkt wurde erfolgreich aus dem Warenkorb entfernt" ; 
 	}
+
 	
 	public String getMessage() {
 		return message;
@@ -54,6 +54,7 @@ public class MessageBean {
 	}
 
 	
+<<<<<<< HEAD
 	public String getMessage2() {
 		return message2;
 	}
@@ -84,10 +85,12 @@ public class MessageBean {
 		this.message2="Bitte wenden Sie sich an Ihren administrator";
 		
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/andklop97/Hwg-LU-Projekt.git
 	
 	public String getMessageHtml(){
 		String html = "";
-		html += "<h3>" + this.getMessage() + "<br>" + this.getMessage2() + "</h3>";
+		html += "<h3>" + this.getMessage() + "</h3>";
 		
 		return html;
 	}

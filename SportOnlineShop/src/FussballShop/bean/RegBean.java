@@ -10,22 +10,18 @@ import de.hwg_lu.bw.jdbc.NoConnectionException;
 import de.hwg_lu.bw.jdbc.PostgreSQLAccess;
 
 public class RegBean {
+	
+	
+	String userid;
+    String password;
+    String email;
+    Connection Dbconn;
+	
 
 	public RegBean() throws NoConnectionException {
-		// TODO Auto-generated constructor stub
 		Dbconn=new PostgreSQLAccess().getConnection();
 	}
-	 String userid;
-     String password;
-    
-     String email;
-      
-     
-     
-	Connection Dbconn;
-	
-	
-	
+	 
 	
 	
 	
@@ -40,14 +36,10 @@ public class RegBean {
 	}
 	
 	
-
-	
-
-	
 	public void insertAccountNoCheck() throws SQLException {
 		String sql="INSERT INTO account " + 
-	"(  USERID, EMAIL ,PASSWORD) " + 
-				"VALUES (?,?,?)";
+	               "(USERID, EMAIL ,PASSWORD) " + 
+				   "VALUES (?,?,?)";
 		System.out.println(sql);
 		
 		PreparedStatement myStat=this.Dbconn.prepareStatement(sql);
@@ -62,7 +54,6 @@ public class RegBean {
 		
 		if(userid.length()>16) userid= userid.substring(0, 16);
 		if(password.length()>32) password=password.substring(0, 32);
-		
 		if(email.length()>256) email=email.substring(0, 256);
 		
 		
@@ -77,35 +68,6 @@ public class RegBean {
 	}
 	else return false;
 	}
-	
-	
-	
-		
-		
-		
-		
-		
-		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -124,9 +86,6 @@ public class RegBean {
 		this.password = password;
 	}
    
-
-	
-
 	public String getEmail() {
 		return email;
 	}

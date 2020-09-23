@@ -15,8 +15,14 @@
 <jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
 
 
+<<<<<<< HEAD
 
 <jsp:getProperty property="htmlFromWarenkorb" name="fsb"/>
+=======
+<div class="message"> <jsp:getProperty property="messageHtml" name="msg"/> </div>
+
+<jsp:getProperty property="htmlFromWarenkorb" name="fsb"/> 
+>>>>>>> branch 'master' of https://github.com/andklop97/Hwg-LU-Projekt.git
 
 
 </body>

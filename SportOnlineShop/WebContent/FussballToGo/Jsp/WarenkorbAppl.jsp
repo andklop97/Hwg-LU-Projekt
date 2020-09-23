@@ -41,7 +41,9 @@ if(bestellung.equals("bestellen")) {
 	} 
 	response.sendRedirect("WarenkorbView.jsp") ; 
 }else if(entf.equals("entfernen")){
-	fsb.deleteFromWarenkorb(warenkorbid) ;
+	if(fsb.deleteFromWarenkorb(warenkorbid)){
+		msg.setEntfernt(); 
+	}
 	response.sendRedirect("WarenkorbView.jsp") ; 
 }
 
