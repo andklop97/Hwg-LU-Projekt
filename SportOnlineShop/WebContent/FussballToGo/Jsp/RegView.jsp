@@ -9,7 +9,7 @@
 <link  type="text/css" rel="stylesheet" href="../Css/reg.css"/>
 </head>
 <body>
-<jsp:useBean id="Msg" class="FussballShop.bean.MessageBean" scope="session" />
+<jsp:useBean id="regMsg" class="FussballShop.bean.RegMessageBean" scope="session" />
 <div class="menu">
 <div class="header">
 <div class="hed">
@@ -20,9 +20,10 @@
    
   </div>
 </div>
-<jsp:getProperty property="messageHtml" name="Msg"/>
+
 <form action="./RegAppl.jsp">
-<div class="titel"><h1>Account erstellen</h1></div>
+<div class="regMsg" > <jsp:getProperty property="regMessageHtml" name="regMsg"/> </div>
+<div class="titel"> <h2>Account erstellen</h2> </div>
    <div class="u"> Username<input class="name" type="text" name="name" value="" /> </div>
    <div class="m"> E-Mail<input class="mail" type="email" name="mail" value="" /> </div>
 <div class="pa"> Passwort<input class="pass" type="text" name="password" value="" /> </div>

@@ -10,6 +10,7 @@
 </head>
 <body>
 <jsp:useBean id="anmld" class="FussballShop.bean.anmeldenBean" scope="session" />
+<jsp:useBean id="anMsg" class="FussballShop.bean.anmeldenMessageBean" scope="session" />
 <%
 String name=request.getParameter("name");
 String password=request.getParameter("Password");
@@ -26,12 +27,12 @@ if(Ein.equals("Einloggen")){
 		boolean log=anmld.checkUseridPassword();
 		if(log){
 			anmld.setLoggedIn(true);
-			//Msgaccount.setLoginSuccessful();
-			response.sendRedirect("./StartseiteView.jsp");
+			//anMsg.setLoginSuccessful();
+			response.sendRedirect("./StartseiteView2.jsp");
 		}
 		else{
 			
-		//	Msgaccount.setLoginFailed();
+		    anMsg.setLoginFailed();
 			response.sendRedirect("./anmeldenView.jsp");
 			
 		}
@@ -39,7 +40,7 @@ if(Ein.equals("Einloggen")){
 	catch(SQLException se){
 		se.printStackTrace();
 		
-	//	Msgaccount.setAnyError();
+	    anMsg.setAnyError();
 		response.sendRedirect("./anmeldenView.jsp");
 		
 	}

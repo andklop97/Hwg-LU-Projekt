@@ -11,7 +11,7 @@
 </head>
 <body>
 <jsp:useBean id="account" class="FussballShop.bean.RegBean" scope="session" />
-<jsp:useBean id="Msg" class="FussballShop.bean.MessageBean" scope="session" />
+<jsp:useBean id="regMsg" class="FussballShop.bean.RegMessageBean" scope="session" />
 <%
 String name=request.getParameter("name");
 String mail=request.getParameter("mail");
@@ -32,13 +32,13 @@ if(Reg.equals("Registrieren") && check!=null){
 	try{
 		boolean userAngelegt = account.insertAccountIfNotExists();
 		if(userAngelegt) {
-			Msg.setRegistrierenSuccesful(name);
+			regMsg.setRegistrierenSuccesful(name);
 		}
-		else Msg.setAlreadExists(name);
+		else regMsg.setAlreadExists(name);
 	}
 	catch(SQLException se){
 		se.printStackTrace();
-		Msg.setAnError(name);
+		regMsg.setAnError();
 	}
 	
 	response.sendRedirect("./RegView.jsp");

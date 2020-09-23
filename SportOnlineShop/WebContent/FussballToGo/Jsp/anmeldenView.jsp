@@ -9,7 +9,7 @@
 <link  type="text/css" rel="stylesheet" href="../Css/anmelden.css"/>
 </head>
 <body>
-<jsp:useBean id="Msg" class="FussballShop.bean.MessageBean" scope="session" />
+<jsp:useBean id="anMsg" class="FussballShop.bean.anmeldenMessageBean" scope="session" />
 <div class="header">
 <div class="hed">
 <div > <a class="a0" href="./StartseiteView.jsp">Home</a> </div>
@@ -20,11 +20,11 @@
   </div>
     
   
- 
   
    </div>
    <form action="./anmeldenAppl.jsp">
-   <div class="titel"><h1>Einloggen</h1></div>
+  <div class="anMsg"> <jsp:getProperty property="anMessageHtml" name="anMsg"/> </div>
+   <div class="titel"> <h2>Einloggen</h2> </div>
 <div class="a"> Username<input class="name" type="text" name="name" value="" /> </div>
 <div class="b"> Passwort<input class="pass" type="text" name="Password" value="" /> </div>
 <div class="c"> <input class="anm" type="submit" name="Ein" value="Einloggen" /></div>

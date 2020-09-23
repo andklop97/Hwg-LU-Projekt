@@ -19,12 +19,9 @@ public class RegBean {
 	
 
 	public RegBean() throws NoConnectionException {
-		// TODO Auto-generated constructor stub
 		Dbconn=new PostgreSQLAccess().getConnection();
 	}
 	 
-	
-	
 	
 	
 	
@@ -39,13 +36,10 @@ public class RegBean {
 	}
 	
 	
-	
-
-	
 	public void insertAccountNoCheck() throws SQLException {
 		String sql="INSERT INTO account " + 
-	"(  USERID, EMAIL ,PASSWORD) " + 
-				"VALUES (?,?,?)";
+	               "(USERID, EMAIL ,PASSWORD) " + 
+				   "VALUES (?,?,?)";
 		System.out.println(sql);
 		
 		PreparedStatement myStat=this.Dbconn.prepareStatement(sql);
