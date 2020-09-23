@@ -35,15 +35,17 @@ public class Artikel {
 		+"<input type='hidden' name= 'artikelnummer' value= '" + this.anr + "' > "
 		+"<input type='hidden' name= 'artikelname' value= '" + this.aname + "' > " 
 		+"<div class= 'titel'> "+ this.aname + "</div>" 
+		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
+		+ "<div class='b'>"+ this.preis + " EUR " +"</div>"
+		
 		+"<div class= 'buttons'>"
 		+ "<br>"
 		+ "<input class='btn' type= 'submit' name= 'bestellung' value= 'bestellen'>"
 		+ "<input class='btn1' type= 'submit' name= 'entf' value= 'entfernen'>"
 		+ "</div>"
 		+ " <br> "
-		+"<input type='hidden' name= 'artikelpreis' value= '" + this.preis + "' > " 
-		+ "<div class='b'>"+ this.preis + " EUR " +"</div>" 
 		+ "</div>"  
+		
 		+ "</form>"
 		+"<br>\n" ; 
 				

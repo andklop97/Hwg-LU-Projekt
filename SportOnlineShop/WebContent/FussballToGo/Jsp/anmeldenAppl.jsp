@@ -1,3 +1,4 @@
+<%@page import="FussballShop.bean.MessageBean"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="FussballShop.bean.anmeldenBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -10,6 +11,7 @@
 </head>
 <body>
 <jsp:useBean id="anmld" class="FussballShop.bean.anmeldenBean" scope="session" />
+<jsp:useBean id="Msg" class="FussballShop.bean.MessageBean" scope="session" />
 <%
 String name=request.getParameter("name");
 String password=request.getParameter("password");
@@ -26,12 +28,12 @@ if(Ein.equals("Einloggen")){
 		boolean log=anmld.checkUseridPassword();
 		if(log){
 			anmld.setLoggedIn(true);
-			//Msgaccount.setLoginSuccessful();
-			response.sendRedirect("./StartseiteView.jsp");
+			//Msg.setLoginSuccessful();
+			response.sendRedirect("./anmeldenView.jsp");
 		}
 		else{
 			
-		//	Msgaccount.setLoginFailed();
+		//	Msg.setLoginFailed();
 			response.sendRedirect("./anmeldenView.jsp");
 			
 		}
@@ -39,7 +41,7 @@ if(Ein.equals("Einloggen")){
 	catch(SQLException se){
 		se.printStackTrace();
 		
-	//	Msgaccount.setAnyError();
+//	Msg.setAnError();
 		response.sendRedirect("./anmeldenView.jsp");
 		
 	}

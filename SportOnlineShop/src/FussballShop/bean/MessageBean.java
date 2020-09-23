@@ -21,7 +21,18 @@ public class MessageBean {
 	
 	}
 	
-	
+	public void setLoginSuccessful() {
+		message="Sie können jetzt bestellen";
+		message2="d";
+	}
+	public String setLoginFailed() {
+		String html="";
+		message="<h2>" + "Ihre Anwendung ist fehlgeschlagen" + "</h2> \n";
+		message2="<h4>" + "Bitte versuchen es noch einmal" + "</h4> \n";
+		html+=message + message2;
+		return html;
+		
+	}
 	
 	public void setBestellt () {
 		message = "Artikel wurde erfolgreich bestellt" ; 
@@ -68,7 +79,7 @@ public class MessageBean {
 		this.message2="Bitte wählen Sie einen anderen Username";
 		
 	}
-	public void setAnError(String userid) {
+	public void setAnError() {
 		this.message="Es ist ein Fehler aufgetreten ";
 		this.message2="Bitte wenden Sie sich an Ihren administrator";
 		

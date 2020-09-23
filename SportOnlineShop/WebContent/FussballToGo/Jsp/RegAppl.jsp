@@ -38,7 +38,7 @@ if(Reg.equals("Registrieren") && check!=null){
 	}
 	catch(SQLException se){
 		se.printStackTrace();
-		Msg.setAnError(name);
+	//	Msg.setAnError(name);
 	}
 	
 	response.sendRedirect("./RegView.jsp");

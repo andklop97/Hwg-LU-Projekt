@@ -60,7 +60,7 @@ margin-left: 20px;
 }
 body {
 	margin: 0 auto;
-	 background-image: url("../ImgBackground/DUbild.jpeg");
+	 background-image: url("../ImgBackground/UBildF.jpg");
 	 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -77,7 +77,7 @@ body {
 .button1{
 	width: 400px;
 	height: 80px;
-	background-color:white;
+	background-color:pink;
 	margin-top: 70px;
 	margin-left: 450px;
 	color: black;
@@ -86,7 +86,7 @@ border:double;
 .button2{
 	width: 400px;
 	height: 80px;
-	background-color:white;
+	background-color:pink;
 	margin-top: 50px;
 	margin-left: 450px;
 	 color: black;
@@ -96,7 +96,7 @@ border:double;
 .button3{
 	width: 400px;
 	height: 80px;
-	background-color:white;
+	background-color:pink;
 	margin-top: 50px;
 	margin-left: 450px;
 	 color: black;

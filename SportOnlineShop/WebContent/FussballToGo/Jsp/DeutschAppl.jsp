@@ -1,3 +1,4 @@
+<%@page import="FussballShop.bean.anmeldenBean"%>
 <%@page import="java.math.BigDecimal"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -11,7 +12,7 @@
 
 <jsp:useBean id="fsb" class="FussballShop.bean.FussballToGoBean" scope="session" />
 <jsp:useBean id="msg" class="FussballShop.bean.MessageBean" scope="session" />
-
+<jsp:useBean id="anmd" class="FussballShop.bean.anmeldenBean" scope="session" />
 <%
 
 String bestellung = request.getParameter("bestellung")  ;
@@ -32,12 +33,12 @@ BigDecimal preis= new BigDecimal(artikelpreis) ;
 
 
 
-if(bestellung.equals("bestellen")) {
+if(bestellung.equals("bestellen")&& anmd.isLoggedIn()==true) {
 	if(fsb.addBestellung(anr, artikelname, preis)){
 		msg.setBestellt() ; 
 	}
 	response.sendRedirect("DeutschView.jsp") ; 
-}else if(ware.equals("in den Warenkorb")){
+}else if(ware.equals("in den Warenkorb")&& anmd.isLoggedIn()==true){
 	if(fsb.addWarenkorb(anr, artikelname, preis)){
 		msg.setWarenkorb() ; 
 	}

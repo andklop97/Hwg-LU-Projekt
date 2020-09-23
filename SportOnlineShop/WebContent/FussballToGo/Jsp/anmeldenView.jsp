@@ -7,6 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>anmeldenView</title>
 <link  type="text/css" rel="stylesheet" href="../Css/anmelden.css"/>
+
 </head>
 <body>
 <jsp:useBean id="Msg" class="FussballShop.bean.MessageBean" scope="session" />
@@ -23,10 +24,11 @@
  
   
    </div>
+   <jsp:getProperty property="messageHtml" name="Msg"/>
    <form action="./anmeldenAppl.jsp">
    <div class="titel"><h1>Einloggen</h1></div>
 <div class="a"> Username<input class="name" type="text" name="name" value="" /> </div>
-<div class="b"> Passwort<input class="pass" type="text" name="Password" value="" /> </div>
+<div class="b"> Passwort<input class="pass" type="password" name="Password" value="" /> </div>
 <div class="c"> <input class="anm" type="submit" name="Ein" value="Einloggen" /></div>
 <div class="d"><div class="left"> Hast du keinen Account? </div><a  class="right" href="./RegView.jsp">Dann erstelle dir jetzt einen!</a></div>
 </form>

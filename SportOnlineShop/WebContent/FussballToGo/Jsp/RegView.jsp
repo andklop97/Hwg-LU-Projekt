@@ -25,7 +25,7 @@
 <div class="titel"><h1>Account erstellen</h1></div>
    <div class="u"> Username<input class="name" type="text" name="name" value="" /> </div>
    <div class="m"> E-Mail<input class="mail" type="email" name="mail" value="" /> </div>
-<div class="pa"> Passwort<input class="pass" type="text" name="password" value="" /> </div>
+<div class="pa"> Passwort<input class="pass" type="password" name="password" value="" /> </div>
 <div class="b"><input class="check" type="checkbox" name="check" value="" />
  <p class="p">Ja ich m&ouml;chte ein Mitglied des FussballToGo werden und Zugang zu produkten und Erlebnissen sowie News von FussballToGo per E-Mail erhalten.
  Für die Mitgliedschaft ben&ouml;tigst du ein FussballToGo-Kontoprofil. Ich akzeptiere, dass FussballToGo ein Profil für mich erstellt. Ich habe die 

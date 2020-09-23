@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+img{
+	
+}
+.cool{
+
+	background-color: aliceblue;
+	 width: 130%;
+}
+.bild{
+	
+}
+
+.titel{
+	
+font-family:inherit;
+}
+.btn{
+	
+	border:none;
+	color:white;
+	background-color: black;
+	width:120px;
+	height:40px;
+	font-family:arial;
+}
+.btn1{
+	
+	border:none;
+	color:white;
+	background-color: gray;
+	width:120px;
+	height:40px;
+	margin-left:20px;
+	font-family:arial;
+}
+.b{
+margin-top:10px;
+	color:red;
+}
